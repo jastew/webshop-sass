@@ -1,0 +1,26 @@
+{
+  "name": "webshop-sass",
+  "version": "1.0.0",
+  "description": "how I imagine sass working for multiple webshops using a core library",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jastew/webshop-sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jastew/webshop-sass/issues"
+  },
+  "homepage": "https://github.com/jastew/webshop-sass#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.2.0",
+    "yargs": "^4.3.2"
+  }
+}
