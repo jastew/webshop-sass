@@ -1,0 +1,17 @@
+body {
+  background: green; }
+
+img {
+  max-width: 100%;
+  vertical-align: top; }
+
+.product-grid {
+  padding: 0;
+  margin: 0 0 0 -1em;
+  list-style-type: none; }
+  .product-grid__item {
+    display: inline-block;
+    width: 33.33333%;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    box-sizing: border-box; }
