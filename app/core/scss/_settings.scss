@@ -1,3 +1,37 @@
-$color--primary: red !default;
+$grey: #eee;
+$red: #f00;
 
-$grid: 4 !default;
+$color--primary: $red !default;
+$color--background: $grey !default;
+
+$font-family: sans-serif !default;
+
+$width--gutter: 1.5em !default;
+
+$grid: 1 !default;
+$grid-breakpoints: (
+  (
+    breakpoint: 'min-width: 440px',
+    col-count: 2,
+  ),
+  (
+    breakpoint: 'min-width: 767px',
+    col-count: 3,
+  ),
+  (
+    breakpoint: 'min-width: 980px',
+    col-count: 4,
+  ),
+  (
+    breakpoint: 'min-width: 1200px',
+    col-count: 5,
+  ),
+  (
+    breakpoint: 'min-width: 1400px',
+    col-count: 6,
+  ),
+  (
+    breakpoint: 'min-width: 1600px',
+    col-count: 7,
+  )
+) !default;

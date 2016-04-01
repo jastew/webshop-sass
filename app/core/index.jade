@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 html(lang="en")
-head
-  meta(charset="UTF-8")
-  block title
-    title WebShop
-  meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
-  link(rel="stylesheet", href="css/main.css")
-body
-  block content
-    h1 WebShop
-    
-    ul.product-grid
-      - for ($i = 1; $i <= 10; $i++)
-        li.product-grid__item
-          .product
-            a.product__image(href="#"): img(src="http://placehold.it/400", alt="")
+  head
+    meta(charset="UTF-8")
+    block title
+      title WebShop
+    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    link(rel="stylesheet", href="css/main.css")
+  body
+    block content
+      h1 WebShop
+      
+      ul.product-grid
+        - for ($i = 1; $i <= 10; $i++)
+          li.product-grid__item
+            .product
+              a.product__image(href="#"): img(src="http://placehold.it/400", alt="")
+              .product__body
+                h3.product__name Lorem Ipsum
+                p.product__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorem alias ea!
+              .product__cta
+                a.product__add.btn.btn--block.btn--primary(href="#") Add to Cart

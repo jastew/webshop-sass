@@ -1,7 +1,9 @@
 @import './settings';
 
 body {
-  background: $color--primary;
+  margin: $width--gutter;
+  font-family: $font-family;
+  background: $color--background;
 }
 
 img {
@@ -9,23 +11,58 @@ img {
   vertical-align: top;
 }
 
+
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1em;
+  text-decoration: none;
+  text-align: center;
+
+  &--block {
+    display: block;
+  }
+
+  &--primary {
+    background: $color--primary;
+    color: #fff;
+  }
+}
+
+
+
 .product-grid {
   padding: 0;
-  margin: 0 0 0 -1em;
+  margin: 0 0 0 (-$width--gutter);
   list-style-type: none;
 
   &__item {
     display: inline-block;
     width: 100% / $grid;
-    padding-left: 1em;
-    margin-bottom: 1em;
+    padding-left: $width--gutter;
+    margin-bottom: $width--gutter;
     box-sizing: border-box;
+
+    @each $map in $grid-breakpoints {
+      @media screen and (map-get($map, breakpoint)) {
+        width: 100% / map-get($map, col-count);
+      }
+    }
   }
 }
 
 .product {
+  background: #fff;
 
   &__image {
 
+  }
+  &__body {
+    padding: 1em;
+    border: 1px solid #ddd;
+  }
+  &__name {
+    margin: 0;
   }
 }
